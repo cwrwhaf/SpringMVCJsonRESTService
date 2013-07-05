@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+  http://www.springframework.org/schema/mvc    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+  http://www.springframework.org/schema/context    http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<context:component-scan base-package="com.cwrw.haf" />
+	<mvc:annotation-driven />
+
+	<bean id="phoneBookService" class="au.com.reece.com.cwrw.haf.serviceviceImpl" />
+	<bean id="phoneBookController"
+		class="au.com.reece.com.cwrw.haf.controllertroller" />
+	<bean id="repository" class="au.com.reece.scott.davies.com.cwrw.haf.repository class="com.intera.util.web.servlet.filter.JsonpCallbackFilter" id="jsonpCallbackFilter" />
+</beans>
